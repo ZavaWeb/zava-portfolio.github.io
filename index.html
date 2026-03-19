@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Zava.Rakoto/Portfolio</title>
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">
+    <img src="logo.jpg" alt="Logo Zava Rakoto" class="logo-img">
+    <span>Zava Rakoto</span>
+</div>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Section Accueil / Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Zava Rakoto</h1>
+  <p1>Artiste plasticien, Illustrateur & Portraitist</p1>
+  <hr style="border: none; height: 2px; background: linear-gradient(to right, transparent, white, transparent);">
+  <br>
+            <h2>Bienvenue dans mon univers artistique !</h2>
+            <br>
+            <br>
+            <p2>L’art est une lumière silencieuse qui traverse les ombres et éclaire les cœurs. À travers chaque création, il apaise les esprits, relie les âmes et fait naître une paix intérieure profonde. Dans un monde souvent agité, l’art devient un refuge, une lueur douce qui guide vers l’harmonie, la compréhension et la sérénité.</p2>
+           <br>
+           <br>
+           <br>
+            <a href="#galerie" class="btn">Voir mon travail</a>
+        </div>
+    </section>
+
+    <!-- Section Galerie avec Filtres -->
+    <section id="galerie" class="galerie">
+        <h2>Mes créations</h2>
+        
+        <!-- Boutons de filtre (gérés par JS) -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="peinture">Peintures</button>
+            <button class="filter-btn" data-filter="dessin">Dessins</button>
+            <button class="filter-btn" data-filter="numerique">Digital</button>
+        </div>
+
+        <!-- Grille des œuvres -->
+        <div class="gallery-grid" id="gallery-grid">
+            <!-- Les cartes sont générées par JavaScript -->
+        </div>
+    </section>
+
+    <!-- Lightbox (popup pour agrandir les images) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <!-- Section À propos -->
+    <section id="a-propos" class="a-propos">
+        <h2>À propos de moi</h2>
+        <div class="about-container">
+            <img src="Moi.jpg" alt="Portrait de l'artiste" class="portrait">
+            <div class="bio">
+                <p>Je m’appelle<strong> Hery Tafita RAKOTOARISON </strong>ou <strong>Zava Rakoto</strong> , artiste visuel passionné par la création . Spécialisé en portrait, peinture et illustration digital , je transforme mes idées en œuvres uniques mêlant créativité, technique et imagination.</p>
+                <p>Mon travail s’inspire à la fois du réel et de l’univers imaginaire, avec une attention particulière aux détails, aux formes et aux ambiances. Chaque projet est pour moi une opportunité d’explorer de nouvelles idées et de repousser mes limites artistiques.</p>
+                <p>J'ai exposé dans plusieurs galeries à Madagascar ;comme: IKM Antsahavola, Ivokolo Analakely ,et des differents animations et je réalise également des commandes pour des particuliers et des entreprises.</p>
+                <br>
+                <hr>
+                <br>
+                <p><strong>Techniques :</strong> Acrylique,Crayon, fusain, illustration numérique</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <h2>Me contacter</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Parlons de votre projet !</h3>
+                  <hr style="border: none; height: 2px; background: linear-gradient(to right, transparent, white, transparent);">
+                  <br>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:herytafita606@gmail.com">herytafita606@gmail.com</a></p>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/261335809179" target="_blank">+261 33 58 091 79</a></p>
+                <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/zava.rakotoarison" target="_blank">facebook.com/zava.rakotoarison</a></p>
+                <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/zava.rakoto?igsh=MXd0YTBiZmxpMWgzNA==" target="_blank">@zava.rakoto</a></p>
+                <div class="social">
+                    <a href="https://www.facebook.com/zava.rakotoarison" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/zava.rakoto?igsh=MXd0YTBiZmxpMWgzNA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/261335809179" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:herytafita606@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea rows="5" placeholder="Votre message" required></textarea>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    <!-- Section Remerciements -->
+<section id="remerciements" class="remerciements">
+    <h2>Remerciements</h2>
+    <div class="thanks-container">
+        <div class="thanks-content">
+            <p class="thanks-text">
+                Je tiens à exprimer ma profonde gratitude à toutes les personnes qui m'ont soutenu tout au long de mon parcours artistique. Un grand merci à ma famille, mes amis et à tous ceux qui croient en mon travail et m'encouragent chaque jour à aller plus loin.
+            </p>
+            <p class="thanks-text">
+             Merci également à vous, visiteurs et amateurs d'art, pour votre intérêt et votre soutien précieux.
+            </p>
+            <p class="thanks-text">
+                L'art est un voyage, et je suis reconnaissant de pouvoir le partager avec vous.
+            </p>
+            <div class="thanks-signature">
+                <i class="fas fa-paint-brush"></i> Zava Rakoto
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Zava Rakotoarison. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
