@@ -18,7 +18,7 @@ const artworks = [
         technique: "Acrylique",
         year: 2025,
         image: " photo5.jpg",
-        description: "Realisatio nature morte"
+        description: "Realisation nature morte"
     },
     {
         id: 3,
